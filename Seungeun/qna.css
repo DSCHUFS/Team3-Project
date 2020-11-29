@@ -52,7 +52,11 @@ html {
     outline: 0;
     min-height: 200px;
     height: 200px;
-   }
+}
+
+fieldset:nth-last-of-type(1) {
+    border: none;
+}
 
 
 /*버튼*/
