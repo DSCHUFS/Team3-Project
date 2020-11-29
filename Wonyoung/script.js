@@ -77,21 +77,20 @@ recommend.addEventListener("click", () => {
 });
 
 // Ask Button
-var askButton = document.querySelector("#ask");
-askButton.addEventListener("click", () => {
-  var overlay = document.querySelector(".overlay");
-  overlay.style.display = "block";
-});
+// var askButton = document.querySelector("#ask");
+// askButton.addEventListener("click", () => {
+//   var overlay = document.querySelector(".overlay");
+//   overlay.style.display = "block";
+// });
 
 // Login Button
 var loginButton = document.querySelector("#login");
 loginButton.addEventListener("click", () => {
   var overlay = document.querySelector(".overlay");
-  var overlayBack = document.querySelector(".overlay-back");
+  var login = document.querySelector(".login");
   overlay.style.display = "block";
-  var content = overlayBack.textContent + "Login";
-  overlayBack.textContent = "";
-  overlayBack.appendChild(document.createTextNode(content));
+  overlay.style.position = "fixed";
+  login.style.display = "block";
 });
 
 // Recommend Button
