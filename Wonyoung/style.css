@@ -541,6 +541,7 @@ header {
 }
 
 .question-info {
+  display: inline-block;
   position: relative;
   top: 3px;
   left: 600px;
