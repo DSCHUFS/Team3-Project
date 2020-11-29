@@ -1,13 +1,25 @@
 <!DOCTYPE html>
-<html lang="kr" dir="ltr">
+<html lang="kr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HufsQnA</title>
 
     <link href="./style.css" type = "text/css" rel = "stylesheet">
   </head>
   <body>
-    <div class = "overlay"> <a href = "index.html"> <div class = "overlay-back"> Back </div> </a> </div>
+    <div class = "overlay">
+      <div class = "overlay-login">
+        <form class = "login">
+            <span>Sign In</span>
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <button class = "inner-login-button"> <a href = "">SIGN IN</a></button>
+            <span>Forgot <a href="#none" class = "inner-a"> Email / Password?</a></span>
+            <span>Create an account? <a href="#none">Sign up</a></span>
+        </form>
+      </div>
+    </div>
     <header>
       <div class = "menu-dropdown">
         <button id = "menu-dropdown-button"> <img src = "./picture/menu-dropdown.svg"> </button>
