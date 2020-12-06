@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>  
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ask a Question</title>
+	<link rel="stylesheet" type="text/css" href="qna.css">
+</head>
+
+<body>
+<div class="side_navbar">
+    <a href="index.html"><h2 style="font-size: 40px">LOGO</h2></a>
+<!-- 
+    <form id="search-google-form" name="searchMain" class="nav-sidebar-form"
+                    action="https://www.google.com/search">
+    	<input type="text" name="qt" class="input-group" placeholder="Google 검색">
+   		<input type="hidden" name="q">
+    	<span class="input-group-btn">
+    	<button class="btn btn-default btn-sm" type="submit"><i class="fa fa-search"></i></button>
+    </span>
+    </form> -->
+</div>
+
+
+<h2 style="font-size: 40px">질문게시판 글쓰기</h2>
+<form action="index.html" method="post" id="form" onsubmit="return postForm()">
+	
+<div class="panel">
+<fieldset>
+	<input type="checkbox" name="익명" class="check">익명<br>
+	제목 <input type="text" name="title" placeholder="제목을 입력하세요." class="panel-body" id="title"><br>
+	태그 <input type="text" name="tag" placeholder="태그를 입력하세요." class="panel-body" id="tag">
+	<textarea rows="20" name="question" wrap="physical" style="resize:none" class="question" contenteditable="true" placeholder="내용을 입력하세요." id="question"></textarea><br>
+	<input type ="file" name="파일선택" value="file" class="file" >
+</fieldset>
+</div>
+
+<fieldset class="btn">
+    <a href="index.html" class="btn btn-no" onclick="return confirm('정말로 취소하시겠습니까?')">취소</a>
+    <input type="submit" class="btn btn-yes" value="등록" id="create">
+</fieldset>
+		
+</form>
+</body>
+</html>
